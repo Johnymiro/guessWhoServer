@@ -1,0 +1,22 @@
+
+Player & Server
+
+1. Player --> Server
+
+   * Connect
+   * Disconnect
+   * Receive int cardID
+   * Send chosen cardID
+
+
+2. Server --> Player
+
+   * Wait for 2 player connection
+   * Generate 2 int cardID 1-24 and send to both players
+   * Receive player guess cardID
+   * Decide winner and notify both players
+
+
+3. Player --> Player
+
+   * Send direct message
