@@ -63,13 +63,6 @@ public class ServerWorker extends Thread{
 
 
 
-    private void handleMultiPlayer() {
-
-    }
-
-
-
-
     private void handleMessageToPlayers(String line) throws IOException{
         List<ServerWorker> playerList = server.getPlayerList();
 

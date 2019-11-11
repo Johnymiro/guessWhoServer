@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa254da1-337a-4fc2-a82f-912436a69753" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WiW_server/org/academiadecodigo/stringrays/ServerWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WiW_server/org/academiadecodigo/stringrays/ServerWorker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/stringrays/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/stringrays/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/stringrays/ServerWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/stringrays/ServerWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/stringrays/protocol.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/stringrays/protocol.txt" afterDir="false" />
-    </list>
+    <list default="true" id="aa254da1-337a-4fc2-a82f-912436a69753" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stringrays/ServerWorker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="239">
-              <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,8 +134,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="260" />
-    <option name="y" value="40" />
+    <option name="x" value="259" />
+    <option name="y" value="39" />
     <option name="width" value="1426" />
     <option name="height" value="1010" />
   </component>
@@ -181,7 +175,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573430906278" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573433799690" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -232,15 +226,15 @@
       <updated>1573315251433</updated>
       <workItem from="1573315254696" duration="14641000" />
       <workItem from="1573341640384" duration="1828000" />
-      <workItem from="1573385038988" duration="17448000" />
+      <workItem from="1573385038988" duration="19172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33917000" />
+    <option name="totallyTimeSpent" value="35641000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="260" y="40" width="1426" height="1010" extended-state="0" />
+    <frame x="259" y="39" width="1426" height="1010" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15606937" />
@@ -327,7 +321,7 @@
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stringrays/ServerWorker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
