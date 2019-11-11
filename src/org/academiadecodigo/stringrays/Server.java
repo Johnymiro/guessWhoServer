@@ -27,6 +27,7 @@ public class Server extends Thread {
                 Socket playerSocket = serverSocket.accept();
 
                 System.out.println("Accepted connection from " + playerSocket);
+
                 ServerWorker worker = new ServerWorker(this, playerSocket);
                 playerList.add(worker);
                 worker.start();

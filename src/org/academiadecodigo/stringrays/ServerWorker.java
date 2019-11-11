@@ -8,7 +8,8 @@ public class ServerWorker extends Thread{
 
     private Server server;
     private Socket playerSocket;
-    private OutputStream outputStream;
+    private PrintWriter printWriter;
+    private String threadName = currentThread().getName();
     private String greetingMessage = "Welcome!\n";
 
     public ServerWorker(Server server, Socket playerSocket){
@@ -35,11 +36,10 @@ public class ServerWorker extends Thread{
         //Handle PLayer game board
 
         InputStream inputStream = playerSocket.getInputStream();
-        this.outputStream = playerSocket.getOutputStream();
+        this.printWriter = new PrintWriter(playerSocket.getOutputStream(), true);
+        printWriter.println(greetingMessage);
 
 
-
-        outputStream.write(greetingMessage.getBytes());
 
         BufferedReader bReader = new BufferedReader(new InputStreamReader(inputStream));
 
@@ -47,11 +47,9 @@ public class ServerWorker extends Thread{
         String line;
         while ((line = bReader.readLine()) != null){
 
+            System.out.println("now we have players no: " + server.getPlayerList().size());
             handleMessageToPlayers(line);
-
-            }
-
-
+        }
 
         playerSocket.close();
     }
@@ -59,7 +57,7 @@ public class ServerWorker extends Thread{
 
     private void handleNumberOfPlayers() throws IOException{
         while(server.getPlayerList().size() != 2){
-            outputStream.write("Waiting for Another Player connection\n".getBytes());
+            printWriter.println("Waiting for Another Player connection\n");
         }
     }
 
@@ -71,21 +69,26 @@ public class ServerWorker extends Thread{
 
 
 
+
     private void handleMessageToPlayers(String line) throws IOException{
         List<ServerWorker> playerList = server.getPlayerList();
-        String text = "";
 
-        String messageToSend = "[message] " + line + "\n";
+        String messageToSend = "Opponent:  " + line + "\n";
+
 
         for (ServerWorker player : playerList) {
-            player.send(messageToSend);
+            if(currentThread().getId() != player.getId()) {
+                player.send(messageToSend);
+                System.out.println("sending to players");
+            }
         }
+
     }
 
 
 
     private void send(String message) throws IOException{
-        outputStream.write(message.getBytes());
+        printWriter.println(message);
     }
 
 
